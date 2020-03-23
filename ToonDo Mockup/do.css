@@ -1,0 +1,71 @@
+
+.todo{
+    height: 400px !important;
+    overflow: scroll;
+    border-style: solid;
+    border-width: 6px;
+    border-color: orange !important;
+}
+.page-logo{
+    width: 5%;
+    height: 5%;
+}
+.center-things{
+    padding-top: 25px;
+    margin: 0 auto;
+}
+.filler{
+    height: 100px;
+}
+.list-box{
+    display: flex;
+    flex-direction: column;
+}
+.todo-item{
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green !important;
+}
+.completed{
+    display: flex;
+    justify-content: space-between;
+}
+.completed *{
+    margin: 0px 5px;
+}
+.checkmark{
+    width: 50px;
+}
+.title-task{
+    padding-top: 15px;
+}
+.cancel{
+    padding: 15px;
+    font-size: 25px;
+    color: red;
+}
+.toon-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.theToon{
+    width: 80%;
+    align-self: center;
+    border-style: solid;
+    border-width: 6px;
+    border-color: orange !important;
+}
+.toonlife{
+    background-color:green;
+    align-self: center;
+}
+.align{
+    margin-top: 20px;
+    align-self: center;
+}
