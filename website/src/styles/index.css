@@ -9,7 +9,7 @@ body {
 } */
 
 #navbar{
-    background-color: lightblue;
+    background-color: lightblue !important;
 }
 
 .page-content{
