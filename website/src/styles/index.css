@@ -1,10 +1,72 @@
 body {
-    padding: 50px;
     background-color: #66CCFF;
     font-family: sans-serif;
 }
 
-#container {
+/* #container {
+    display: flex;
+    justify-content: center;
+} */
+
+#navbar{
+    background-color: lightpink !important;
+}
+
+.page-content{
     display: flex;
     justify-content: center;
 }
+.toonDoHome{
+    margin: 100px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.toonDoHome *{
+    padding: 15px;
+}
+
+.credentials-form{
+    margin: 100px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toonSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+progress {
+    border: none;
+    width: 200px;
+    height: 30px;
+    background: crimson;
+  }
+  
+  progress {
+    color: lightblue;
+  }
+  
+  progress::-webkit-progress-value {
+    background: lightblue;
+  }
+  
+  progress::-moz-progress-bar {
+    background: lightcolor;
+  }
+  
+  progress::-webkit-progress-value {
+    background: blue;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: red;
+  }
+  

@@ -38,3 +38,10 @@
     background-color: pink;
     cursor: pointer;
   }
+  .todoListAndToon{
+    margin:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
