@@ -1,4 +1,5 @@
 import React, { Component } from "react"; 
+import "../styles/index.css";
 import FlipMove from 'react-flip-move';
 
 class TodoItems extends Component {  

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
-import TodoList from './scripts/todo-list.js';
- 
+import NavBar from './scripts/nav-bar.js';
+import "./styles/index.css";
+
 var destination = document.querySelector("#container")
  
 ReactDOM.render(
     <div>
-        <TodoList/>
+        <NavBar/>
     </div>,
     destination
 );
