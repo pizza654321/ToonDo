@@ -9,7 +9,7 @@ body {
 } */
 
 #navbar{
-    background-color: lightblue;
+    background-color: lightpink !important;
 }
 
 .page-content{
@@ -18,7 +18,7 @@ body {
 }
 .toonDoHome{
     margin: 100px;
-    background-color: lightblue;
+    background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body {
 
 .credentials-form{
     margin: 100px;
-    background-color: lightblue;
+    background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
