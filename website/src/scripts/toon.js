@@ -23,7 +23,7 @@ class Toon extends Component {
   render() {    
     return (    
         <div className ="toonSide">
-        <img src={require("../images/toon-placeholder.png")} height="300px" width="280px"></img>
+        <img src={require("../images/gator-toon.png")} height="300px" width="280px"></img>
         <progress value={this.state.health} max='100'></progress>
         <button onClick={this.giveLife}>Give life</button>
         <button onClick={this.takeLife}>Take life</button>
