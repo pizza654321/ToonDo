@@ -9,10 +9,36 @@ class TodoList extends Component {
 
     this.state = {
       items: [],
+      health: 0,
+      mood: "dead"
     };
 
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+  }
+  
+  _takeLife = () =>{
+    let health = this.state.health;
+    this.setState({health: health-10})
+  }
+
+  _giveLife = () =>{
+    let health = this.state.health;
+    this.setState({health: health+10})
+  }
+
+  _updateState = () => {
+    if (this.state.health >= 70) {
+      this.state.mood = "happy"
+    } else if (this.state.health >= 30) {
+      this.state.mood = "normal"
+    } else if (this.state.health >= 10) {
+      this.state.mood = "sad"
+    } else {
+      this.state.mood = "dead"
+    }
+
+    return this.state.mood
   }
 
   addItem(e) {
@@ -30,7 +56,6 @@ class TodoList extends Component {
 
       this._inputElement.value = "";
     }
-    console.log(itemArray);
     e.preventDefault();
   }
 
@@ -58,9 +83,9 @@ class TodoList extends Component {
             </form>
           </div>
 
-          <TodoItems entries={this.state.items} delete={this.deleteItem} />
+          <TodoItems entries={this.state.items} delete={this.deleteItem} _updateStateParent={this._updateState} _takeLifeParent={this._takeLife} _giveLifeParent={this._giveLife} />
         </div>
-        <Toon />
+        <Toon _updateStateParent={this._updateState} _takeLifeParent={this._takeLife} _giveLifeParent={this._giveLife} health={this.state.health} mood={this.state.mood}/>
       </div>
     );
   }
