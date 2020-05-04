@@ -1,12 +1,7 @@
 body {
-    background-color: #66CCFF;
+    background-color: #66CCFF !important;
     font-family: sans-serif;
 }
-
-/* #container {
-    display: flex;
-    justify-content: center;
-} */
 
 #navbar{
     background-color: lightblue !important;
